@@ -1,4 +1,4 @@
-# 2anki Settings
+# 2anki.net Settings
 
 This page let's you configure the settings you would like to use on [2anki.net][0].
 
