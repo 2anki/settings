@@ -1,3 +1,4 @@
+import { browser } from '$app/environment';
 /**
  * Loads the option from local storage
  * @param key the key of the option in the local storage
@@ -5,6 +6,10 @@
  * @returns whether the option is enabled or not
  */
 function loadOption(key: string, defaultValue: boolean): boolean {
+	if (!browser) {
+		return defaultValue;
+	}
+
 	const value = localStorage.getItem(key);
 	if (value === null) {
 		return defaultValue;

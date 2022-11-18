@@ -1,28 +1,49 @@
+<script lang="ts">
+	import Checkbox from '$lib/components/checkbox.svelte';
+	import Input from '$lib/components/input.svelte';
+	import supportedOptions from '$lib/model/supportedOptions';
+
+	const settingsId = 1; // Replace this with title for object_id
+	const setting = supportedOptions();
+
+	const onToggleOption = (name: string, value: boolean) => {
+		console.log(name, value);
+	};
+
+	const onInputChange = (name: string, event: Event) => {
+		console.log(name, event);
+	};
+
+	const deckDesc = `You can use this to change the default name which
+	comes from the Notion page. If you have an existing deck in Anki you
+	want to update then you can also set the name here. It works like Anki
+	so you can create groupings (Parent::Child). Please don't change the
+	deck name if you have subpages, it's more reliable to leave this empty
+	if you have subpages.`;
+</script>
+
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 
 <div class="text-column">
-	<h1>About this app</h1>
+	<h1>Viewing settings for {settingsId}</h1>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
-
-	<pre>npm create svelte@latest</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
-
-	<a href="/"> Back </a>
+	<Input
+		name="deckName"
+		label="Deck Name"
+		description={deckDesc}
+		placeholder="Enter deck name (optional)"
+		onChange={onInputChange}
+	/>
+	{#each setting as setting}
+		<Checkbox
+			name={setting.key}
+			label={setting.label}
+			onClick={onToggleOption}
+			description={setting.description}
+		/>
+	{/each}
+	<a href="/">← Back </a>
 </div>
