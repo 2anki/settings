@@ -37,13 +37,30 @@
 		placeholder="Enter deck name (optional)"
 		onChange={onInputChange}
 	/>
-	{#each setting as setting}
+	{#each setting as option}
 		<Checkbox
-			name={setting.key}
-			label={setting.label}
+			name={option.key}
+			label={option.label}
 			onClick={onToggleOption}
-			description={setting.description}
+			description={option.description}
 		/>
 	{/each}
-	<a href="/">← Back </a>
+
+	<div class="buttons">
+		<button class="save">Save</button>
+		<button class="delete">Delete</button>
+		<button class="default">Default</button>
+	</div>
+
+	<nav><a href="/">← Back </a></nav>
 </div>
+
+<style>
+	.buttons {
+		padding-top: 2rem;
+	}
+	nav {
+		padding-top: 1rem;
+		text-align: center;
+	}
+</style>
