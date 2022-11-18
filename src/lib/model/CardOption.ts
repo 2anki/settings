@@ -5,32 +5,27 @@
  * @returns whether the option is enabled or not
  */
 function loadOption(key: string, defaultValue: boolean): boolean {
-  const value = localStorage.getItem(key);
-  if (value === null) {
-    return defaultValue;
-  }
-  return value === 'true';
+	const value = localStorage.getItem(key);
+	if (value === null) {
+		return defaultValue;
+	}
+	return value === 'true';
 }
 class CardOption {
-  key: string;
+	key: string;
 
-  label: string;
+	label: string;
 
-  value: boolean;
+	value: boolean;
 
-  description: string;
+	description: string;
 
-  constructor(
-    key: string,
-    label: string,
-    description: string,
-    defaultValue = false
-  ) {
-    this.key = key;
-    this.label = label;
-    this.description = description;
-    this.value = loadOption(key, defaultValue);
-  }
+	constructor(key: string, label: string, description: string, defaultValue = false) {
+		this.key = key;
+		this.label = label;
+		this.description = description;
+		this.value = loadOption(key, defaultValue);
+	}
 }
 
 export default CardOption;

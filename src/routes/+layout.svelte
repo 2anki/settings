@@ -12,9 +12,7 @@
 
 	<footer>
 		<p>
-			visit <a href="https://youtube.com/playlist?list=PLzOAzzqpDqukOtwH3IYWiOhr_sjBjfgCd"
-				>💫 2anki.net</a
-			> to learn 2anki
+			made with ❤️ by <a href="https://alemayhu.com">Alexander Alemayhu</a>
 		</p>
 	</footer>
 </div>
