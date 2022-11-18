@@ -15,6 +15,9 @@
 	.container {
 		display: flex;
 		flex-direction: column;
+		padding: 0.9rem 0;
+		padding-right: 1rem;
+		padding-left: 0.2rem;
 	}
 
 	.container label {
@@ -22,5 +25,7 @@
 	}
 	.container input {
 		font-size: 1.2rem;
+		width: 100%;
+		padding: 0.2rem;
 	}
 </style>

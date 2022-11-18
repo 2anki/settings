@@ -26,6 +26,10 @@
 
 <style>
 	.container {
+		padding: 0.4rem;
+		margin: 0.2rem;
+		background: white;
+		border-radius: 9px;
 		display: flex;
 		gap: 0.2rem;
 		font-size: 1.5rem;

@@ -34,7 +34,7 @@ const supportedOptions = (): CardOption[] => {
 		),
 		new CardOption(
 			'avocado',
-			"Only Create Flashcards From Toggles That Don't Have The 🥑 Emoji",
+			'Enable avocado mode Using 🥑 Emoji',
 			"This option enables you to ignore certain toggles when creating flashcards from pages that you don't want to change too much.",
 			false
 		),
