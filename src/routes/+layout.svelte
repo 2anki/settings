@@ -11,7 +11,11 @@
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>
+			visit <a href="https://youtube.com/playlist?list=PLzOAzzqpDqukOtwH3IYWiOhr_sjBjfgCd"
+				>💫 2anki.net</a
+			> to learn 2anki
+		</p>
 	</footer>
 </div>
 
