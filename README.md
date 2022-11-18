@@ -1,6 +1,6 @@
 # 2anki Settings
 
-This page let's you configure the settings you would like to use on 2anki.net.
+This page let's you configure the settings you would like to use on [2anki.net][0].
 
 ## Developing
 
@@ -26,3 +26,5 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+[0]: https://2anki.net
