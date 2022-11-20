@@ -56,7 +56,7 @@
 		{/if}
 	</div>
 
-	<nav><a href="/">← Back </a></nav>
+	<nav><a href="https://2anki.net">← Back </a></nav>
 </div>
 
 <style>
