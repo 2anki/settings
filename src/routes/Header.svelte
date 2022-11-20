@@ -7,7 +7,7 @@
 <header>
 	<div class="corner">
 		<a href="https://2anki.net/">
-			<img src={logo} alt="SvelteKit" />
+			<img src={logo} alt="2anki" />
 		</a>
 	</div>
 	<div class="corner">
