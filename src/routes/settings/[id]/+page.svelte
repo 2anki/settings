@@ -2,9 +2,9 @@
 	import Checkbox from '$lib/components/checkbox.svelte';
 	import Input from '$lib/components/input.svelte';
 	import supportedOptions from '$lib/model/supportedOptions';
-	export let data = { isGlobal: false };
+	export let data = { isDefault: false };
 
-	const isGlobal = data.isGlobal;
+	const isDefault = data.isDefault;
 	const settingsId = 1; // Replace this with title for object_id
 	const setting = supportedOptions();
 
@@ -51,7 +51,7 @@
 	<div class="buttons">
 		<button class="save">Save</button>
 		<button class="delete">Delete</button>
-		{#if !isGlobal}
+		{#if !isDefault}
 			<button class="default">Default</button>
 		{/if}
 	</div>
